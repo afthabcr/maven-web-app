@@ -24,21 +24,7 @@ The project demonstrates how DevOps tools can be integrated to streamline applic
 
 ## Architecture
 
-GitHub
-   ↓
-Jenkins Pipeline
-   ↓
-Maven Build
-   ↓
-Docker Image
-   ↓
-Docker Hub
-   ↓
-Amazon EKS
-   ↓
-AWS Load Balancer
-   ↓
-Web Application
+GitHub → Jenkins → Maven Build → Docker Image → Docker Hub → Amazon EKS → Kubernetes Service → Web Application.
 
 ---
 
