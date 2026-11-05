@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/suffixscope/maven-web-app.git'
+                git 'https://github.com/afthabcr/maven-web-app.git'
             }
         }
         stage('Maven Build') {
@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Docker Image') {
             steps {
-                sh 'docker build -t vinodses/mavenwebapp .'
+                sh 'docker build -t afthab/mavenwebapp .'
             }
         }
         stage('k8s deployment') {
