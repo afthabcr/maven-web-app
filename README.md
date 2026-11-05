@@ -1,10 +1,23 @@
-# Maven Web Application Deployment on Amazon EKS using Jenkins CI/CD
+# End-to-End CI/CD Automation using Jenkins, Docker & Amazon EKS
 
 ## Project Overview
 
-This project demonstrates a complete CI/CD pipeline for deploying a Maven-based Java web application to Amazon Elastic Kubernetes Service (EKS) using Jenkins, Docker, Kubernetes, and GitHub.
+Designed and implemented a CI/CD pipeline to automate the build, containerization and deployment of a Java-based Maven web application using Jenkins, Docker and Kubernetes on Amazon Elastic Kubernetes Service (EKS).
 
-The pipeline automates the entire deployment process, including source code checkout, application build, Docker image creation, and Kubernetes deployment.
+The project demonstrates how DevOps tools can be integrated to streamline application delivery, reduce manual deployment steps and manage containerized applications in a cloud environment.
+
+---
+## Technology Stack
+
+-Cloud: AWS EC2, Amazon EKS
+-CI/CD: Jenkins
+-Build Tool: Apache Maven
+-Containerization: Docker
+-Container Registry: Docker Hub
+-Orchestration: Kubernetes
+-Version Control: Git & GitHub
+-Operating System: Ubuntu Linux
+-AWS Tools: AWS CLI, eksctl, kubectl
 
 ---
 
@@ -28,32 +41,28 @@ Web Application
 
 ---
 
-## Technologies Used
+## Key Implementation Areas
 
-- AWS EC2
-- Amazon EKS
-- Kubernetes
-- Jenkins
-- Git & GitHub
-- Apache Maven
-- Docker
-- Docker Hub
-- AWS CLI
-- kubectl
-- eksctl
-- Ubuntu Linux
+-Configured Jenkins on an AWS EC2 Ubuntu instance.
+-Integrated GitHub with Jenkins for source code management.
+-Configured Maven for automated Java application builds.
+-Created a Dockerfile to containerize the application.
+-Built and managed Docker images.
+-Configured Amazon EKS for Kubernetes-based application deployment.
+-Created Kubernetes Deployment and Service manifests.
+-Exposed the application using a Kubernetes LoadBalancer service.
 
 ---
 
-## Pipeline Workflow
+## Key Learnings
 
-1. Clone source code from GitHub
-2. Build the application using Maven
-3. Build Docker image
-4. Push Docker image to Docker Hub
-5. Deploy application to Amazon EKS
-6. Expose application using Kubernetes Service
-7. Access application through AWS Load Balancer
+1.CI/CD pipeline configuration and automation.
+2.AWS EC2 and EKS infrastructure management.
+3.Docker image creation and container management.
+4.Kubernetes deployments, pods and services.
+5.IAM roles and AWS permissions.
+6.Linux administration and command-line operations.
+7.Troubleshooting deployment and connectivity issues.
 
 ---
 
