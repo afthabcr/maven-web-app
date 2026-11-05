@@ -7,6 +7,7 @@ Designed and implemented a CI/CD pipeline to automate the build, containerizatio
 The project demonstrates how DevOps tools can be integrated to streamline application delivery, reduce manual deployment steps and manage containerized applications in a cloud environment.
 
 ---
+
 ## Technology Stack
 
 -Cloud: AWS EC2, Amazon EKS
